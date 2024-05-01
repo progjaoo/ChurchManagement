@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ChurchManagement.API.props" />
+</Project>

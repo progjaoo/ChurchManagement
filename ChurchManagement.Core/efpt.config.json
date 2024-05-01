@@ -1,0 +1,81 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "ChurchManagementContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Entidades",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "ChurchManagement.Core",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Agenda]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Cargo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CategoriaDespesa]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Departamento]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Despesas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Membro]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MembroDepartamento]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ObjetivosFinanceiro]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Post]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tesouraria]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
