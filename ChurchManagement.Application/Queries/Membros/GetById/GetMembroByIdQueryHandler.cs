@@ -22,7 +22,6 @@ namespace ChurchManagement.Application.Queries.Membros.GetById
                 membro.IdCargo,
                 membro.NomeCompleto,
                 membro.DataNasc,
-                membro.ImagemMembro,
                 membro.Cargo,
                 membro.EstadoCivil,
                 membro.Endereco,

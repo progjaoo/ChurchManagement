@@ -20,7 +20,7 @@ namespace ChurchManagement.Application.Queries.Membros.GetAll
             var membrosViewModel = membro.Select(m => new MembrosViewModel(
                 m.IdMembro,
                 m.NomeCompleto,
-                m.ImagemMembro)).ToList();
+                m.Cargo)).ToList();
 
             return membrosViewModel;
         }

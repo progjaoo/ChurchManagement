@@ -18,9 +18,9 @@ namespace ChurchManagement.Application.Queries.Membros.GetByName
             if (membro == null) return null;
 
             var membrosViewModel = new MembrosViewModel(
-                membro.Cargo,
                 membro.IdCargo,
-                membro.NomeCompleto);
+                membro.NomeCompleto,
+                membro.Cargo);
 
             return membrosViewModel;
         }

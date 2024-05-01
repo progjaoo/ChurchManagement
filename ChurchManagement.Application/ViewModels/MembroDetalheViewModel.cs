@@ -6,8 +6,7 @@ namespace ChurchManagement.Application.ViewModels
     public class MembroDetalheViewModel
     {
         public MembroDetalheViewModel(int idMembro, int idCargo, 
-            string nomeCompleto, DateTime? dataNasc,
-            byte[] imagemMembro, CargoEnum cargo,
+            string nomeCompleto, DateTime? dataNasc, CargoEnum cargo,
             EstadoCivilEnum estadoCivil, string endereco, 
             string telefone, 
             string email, DateTime? dataCadastro,
@@ -17,7 +16,6 @@ namespace ChurchManagement.Application.ViewModels
             IdCargo = idCargo;
             NomeCompleto = nomeCompleto;
             DataNasc = dataNasc;
-            ImagemMembro = imagemMembro;
             Cargo = cargo;
             EstadoCivil = estadoCivil;
             Endereco = endereco;
@@ -31,7 +29,6 @@ namespace ChurchManagement.Application.ViewModels
         public int IdCargo { get;  set; }
         public string NomeCompleto { get;  set; }
         public DateTime? DataNasc { get;  set; }
-        public byte[] ImagemMembro { get;  set; }
         public CargoEnum Cargo { get;  set; }
         public EstadoCivilEnum EstadoCivil { get;  set; }
         public string Endereco { get;  set; }
