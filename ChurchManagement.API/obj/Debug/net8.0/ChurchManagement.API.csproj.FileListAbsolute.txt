@@ -74,3 +74,7 @@ D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManage
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchManagement.API.pdb
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchManagement.API.genruntimeconfig.cache
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ref\ChurchManagement.API.dll
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchManagement.API.sourcelink.json
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\bin\Debug\net8.0\MediatR.dll
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

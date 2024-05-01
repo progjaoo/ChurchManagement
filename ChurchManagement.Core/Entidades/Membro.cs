@@ -7,15 +7,13 @@ namespace ChurchManagement.Core.Entidades;
 public partial class Membro
 {
     public Membro(int idCargo, string nomeCompleto,
-        DateTime? dataNasc,
-        byte[] imagemMembro, CargoEnum cargo,
+        DateTime? dataNasc, CargoEnum cargo,
         EstadoCivilEnum estadoCivil, string endereco,
         string telefone, string email, DateTime? dataBatismo)
     {
         IdCargo = idCargo;
         NomeCompleto = nomeCompleto;
         DataNasc = dataNasc;
-        ImagemMembro = imagemMembro;
         Cargo = cargo;
         EstadoCivil = estadoCivil;
         Endereco = endereco;
@@ -28,7 +26,7 @@ public partial class Membro
     public int IdCargo { get; private set; }
     public string NomeCompleto { get; private set; }
     public DateTime? DataNasc { get; private set; }
-    public byte[] ImagemMembro { get; private set; }
+    public byte[] ImagemMembro { get; set; }
     public CargoEnum Cargo { get; private set; }
     public EstadoCivilEnum EstadoCivil { get; private set; }
     public string Endereco { get; private set; }
@@ -38,15 +36,13 @@ public partial class Membro
     public DateTime? DataBatismo { get; private set; }
 
     public void UpdateMembro(int idCargo, string nomeCompleto,
-        DateTime? dataNasc,
-        byte[] imagemMembro, CargoEnum cargo,
+        DateTime? dataNasc, CargoEnum cargo,
         EstadoCivilEnum estadoCivil, string endereco,
         string telefone, string email, DateTime? dataBatismo)
     {
         IdCargo = idCargo;
         NomeCompleto = nomeCompleto;
         DataNasc = dataNasc;
-        ImagemMembro = imagemMembro;
         Cargo = cargo;
         EstadoCivil = estadoCivil;
         Endereco = endereco;

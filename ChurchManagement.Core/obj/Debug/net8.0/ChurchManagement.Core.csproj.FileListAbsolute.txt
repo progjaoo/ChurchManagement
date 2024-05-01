@@ -9,3 +9,4 @@ D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManage
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Core\obj\Debug\net8.0\refint\ChurchManagement.Core.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Core\obj\Debug\net8.0\ChurchManagement.Core.pdb
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Core\obj\Debug\net8.0\ref\ChurchManagement.Core.dll
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Core\obj\Debug\net8.0\ChurchManagement.Core.sourcelink.json

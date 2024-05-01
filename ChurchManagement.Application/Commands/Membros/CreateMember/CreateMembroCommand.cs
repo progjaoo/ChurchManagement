@@ -8,7 +8,6 @@ namespace ChurchManagement.Application.Commands.Membros.CreateMember
         public int IdCargo { get;  set; }
         public string NomeCompleto { get;  set; }
         public DateTime? DataNasc { get;  set; }
-        public byte[] ImagemMembro { get;  set; }
         public CargoEnum Cargo { get;  set; }
         public EstadoCivilEnum EstadoCivil { get;  set; }
         public string Endereco { get;  set; }

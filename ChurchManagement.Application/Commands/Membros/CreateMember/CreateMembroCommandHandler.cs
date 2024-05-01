@@ -14,7 +14,7 @@ namespace ChurchManagement.Application.Commands.Membros.CreateMember
         public async Task<int> Handle(CreateMembroCommand request, CancellationToken cancellationToken)
         {
             var membro = new Membro(request.IdCargo, request.NomeCompleto, request.DataNasc,
-                request.ImagemMembro, request.Cargo, request.EstadoCivil, request.Endereco, 
+                request.Cargo, request.EstadoCivil, request.Endereco, 
                 request.Telefone, request.Email, request.DataBatismo);
 
             await _membroRepository.AddAsync(membro);

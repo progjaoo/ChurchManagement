@@ -15,7 +15,7 @@ namespace ChurchManagement.Application.Commands.Membros.UpdateMember
             var membro = await _membroRepository.GetByIdAsync(request.IdMembro);
 
             membro.UpdateMembro(request.IdCargo, request.NomeCompleto, request.DataNasc,
-                request.ImagemMembro, request.Cargo, request.EstadoCivil, request.Endereco,
+                request.Cargo, request.EstadoCivil, request.Endereco,
                 request.Telefone, request.Email, request.DataBatismo);
 
             await _membroRepository.SaveChangesAsync();
