@@ -35,8 +35,8 @@ namespace ChurchManagement.Infrastructure.Persistence.Repositorios
         }
         public async Task DeleteAsync(int id)
         {
-            var paciente = await _dbcontext.Membros.FindAsync(id);
-            _dbcontext.Membros.Remove(paciente);
+            var membro = await _dbcontext.Membros.FindAsync(id);
+            _dbcontext.Membros.Remove(membro);
             await _dbcontext.SaveChangesAsync();
         }
         public async Task SaveChangesAsync()
