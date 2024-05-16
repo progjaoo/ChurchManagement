@@ -1,4 +1,4 @@
-﻿using ChurchManagement.Application.ViewModels;
+﻿using ChurchManagement.Application.ViewModels.MembrosVMs;
 using MediatR;
 
 namespace ChurchManagement.Application.Queries.Membros.GetAll

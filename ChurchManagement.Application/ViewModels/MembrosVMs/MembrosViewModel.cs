@@ -1,8 +1,8 @@
 ﻿using ChurchManagement.Core.Enums;
 
-namespace ChurchManagement.Application.ViewModels
+namespace ChurchManagement.Application.ViewModels.MembrosVMs
 {
-    public class MembrosViewModel 
+    public class MembrosViewModel
     {
         public MembrosViewModel(int idMembro, string nomeCompleto, CargoEnum cargo)
         {
@@ -12,6 +12,6 @@ namespace ChurchManagement.Application.ViewModels
         }
         public int IdMembro { get; set; }
         public string NomeCompleto { get; set; }
-        public CargoEnum Cargo { get;  set; }
+        public CargoEnum Cargo { get; set; }
     }
 }

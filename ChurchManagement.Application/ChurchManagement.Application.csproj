@@ -15,4 +15,8 @@
     <ProjectReference Include="..\ChurchManagement.Infrastructure\ChurchManagement.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\Posts\UploadImagem\" />
+  </ItemGroup>
+
 </Project>

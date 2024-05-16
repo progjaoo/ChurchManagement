@@ -1,4 +1,4 @@
-﻿namespace ChurchManagement.Application.ViewModels
+﻿namespace ChurchManagement.Application.ViewModels.MembrosVMs
 {
     public class MembroCargoViewModel
     {

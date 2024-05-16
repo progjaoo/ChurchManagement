@@ -7,11 +7,19 @@ namespace ChurchManagement.Core.Entidades;
 
 public partial class Post
 {
-    public int IdPost { get; set; }
+    public Post(string titulo, string assunto)
+    {
+        Titulo = titulo;
+        Assunto = assunto;
+    }
+    public int IdPost { get; private set; }
+    public string Titulo { get; private set; }
+    public string Assunto { get; private set; }
+    public byte[] Imagem { get; private set; }
 
-    public string Titulo { get; set; }
-
-    public string Assunto { get; set; }
-
-    public byte[] Imagem { get; set; }
+    public void Update(string titulo, string assunto)
+    {
+        Titulo = titulo;
+        Assunto = assunto;
+    }
 }
