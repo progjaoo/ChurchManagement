@@ -23,6 +23,7 @@ builder.Services.AddDbContext<ChurchManagementContext>(options
 //register DI
 builder.Services.AddScoped<IMembroRepository, MembroRepository>();
 builder.Services.AddScoped<IPostRepository, PostRepository>();
+builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 
 //register mediator
 builder.Services.AddMediatR(typeof(GetAllMembrosQuery));

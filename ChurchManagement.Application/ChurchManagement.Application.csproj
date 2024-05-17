@@ -15,12 +15,4 @@
     <ProjectReference Include="..\ChurchManagement.Infrastructure\ChurchManagement.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Commands\Cargos\Delete\" />
-    <Folder Include="Commands\Cargos\Update\" />
-    <Folder Include="Commands\Cargos\Create\" />
-    <Folder Include="Queries\Cargos\GetAll\" />
-    <Folder Include="Queries\Cargos\GetById\" />
-  </ItemGroup>
-
 </Project>

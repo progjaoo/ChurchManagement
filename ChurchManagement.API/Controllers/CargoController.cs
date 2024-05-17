@@ -54,7 +54,7 @@ namespace ChurchManagement.API.Controllers
 
             return NoContent();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(DeleteCargoCommand command)
         {
             await _mediator.Send(command);
