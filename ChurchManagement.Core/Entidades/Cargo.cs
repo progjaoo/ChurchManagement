@@ -4,15 +4,27 @@ namespace ChurchManagement.Core.Entidades;
 
 public partial class Cargo
 {
-    public int IdCargo { get; set; }
+    public Cargo(int idDepartamento, string nome, string descricao, string funcao, int ativo)
+    {
+        IdDepartamento = idDepartamento;
+        Nome = nome;
+        Descricao = descricao;
+        Funcao = funcao;
+        Ativo = ativo;
+    }
+    public int IdCargo { get; private set; }
+    public int IdDepartamento { get; private set; }
+    public string Nome { get; private set; }
+    public string Descricao { get; private set; }
+    public string Funcao { get; private set; }
+    public int Ativo { get; private set; }
 
-    public int IdDepartamento { get; set; }
-
-    public string Nome { get; set; }
-
-    public string Descricao { get; set; }
-
-    public string Funcao { get; set; }
-
-    public byte[] Ativo { get; set; }
+    public void Update(int idDepartamento, string nome, string descricao, string funcao, int ativo)
+    {
+        IdDepartamento = idDepartamento;
+        Nome = nome;
+        Descricao = descricao;
+        Funcao = funcao;
+        Ativo = ativo;
+    }
 }
