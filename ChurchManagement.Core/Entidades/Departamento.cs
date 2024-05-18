@@ -7,11 +7,21 @@ namespace ChurchManagement.Core.Entidades;
 
 public partial class Departamento
 {
-    public int IdDepartamento { get; set; }
+    public Departamento(string nome, string descricao, string lider)
+    {
+        Nome = nome;
+        Descricao = descricao;
+        Lider = lider;
+    }
+    public int IdDepartamento { get; private set; }
+    public string Nome { get; private set; }
+    public string Descricao { get; private set; }
+    public string Lider { get; private set; }
 
-    public string Nome { get; set; }
-
-    public string Descricao { get; set; }
-
-    public string Lider { get; set; }
+    public void Update(string nome, string descricao, string lider)
+    {
+        Nome = nome;
+        Descricao = descricao;
+        Lider = lider;
+    }
 }

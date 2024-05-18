@@ -50,7 +50,7 @@ namespace ChurchManagement.API.Controllers
 
             return CreatedAtAction(nameof(GetByIdAsync), new {id = id}, command);
         }
-        [HttpPut("Atualizar")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Put(UpdatePostCommand command)
         {
             await _mediator.Send(command);

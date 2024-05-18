@@ -1,4 +1,7 @@
+using ChurchManagement.Application.Commands.Cargos.Create;
+using ChurchManagement.Application.Commands.Departamentos.Create;
 using ChurchManagement.Application.Commands.Membros.CreateMember;
+using ChurchManagement.Application.Commands.Posts.Create;
 using ChurchManagement.Application.Queries.Membros.GetAll;
 using ChurchManagement.Core.Entidades;
 using ChurchManagement.Core.Interfaces;
@@ -24,10 +27,14 @@ builder.Services.AddDbContext<ChurchManagementContext>(options
 builder.Services.AddScoped<IMembroRepository, MembroRepository>();
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
+builder.Services.AddScoped<IDepartamentoRepository, DepartamentoRepository>();
 
 //register mediator
 builder.Services.AddMediatR(typeof(GetAllMembrosQuery));
 builder.Services.AddMediatR(typeof(CreateMembroCommand));
+builder.Services.AddMediatR(typeof(CreateDepartamentoCommand));
+builder.Services.AddMediatR(typeof(CreateCargoCommand));
+builder.Services.AddMediatR(typeof(CreatePostCommand));
 
 #endregion
 var app = builder.Build();

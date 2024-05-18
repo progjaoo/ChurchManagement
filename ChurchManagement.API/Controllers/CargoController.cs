@@ -8,8 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChurchManagement.API.Controllers
 {
-    [ApiController]
     [Route("api/cargos")]
+    [ApiController]
     public class CargoController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -47,7 +47,7 @@ namespace ChurchManagement.API.Controllers
 
             return CreatedAtAction(nameof(GetByIdAsync), new { id = id }, command);
         }
-        [HttpPut("Atualizar")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Put(UpdateCargoCommand command)
         {
             await _mediator.Send(command);
