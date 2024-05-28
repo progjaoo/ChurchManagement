@@ -68,7 +68,6 @@ D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManage
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ChurchManagement.API.props
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\staticwebassets.pack.json
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\scopedcss\bundle\ChurchManagement.API.styles.css
-D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchManagement.API.csproj.CopyComplete
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchManagement.API.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\refint\ChurchManagement.API.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchManagement.API.pdb
@@ -78,3 +77,4 @@ D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManage
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\bin\Debug\net8.0\MediatR.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.API\obj\Debug\net8.0\ChurchMa.21E8C90D.Up2Date

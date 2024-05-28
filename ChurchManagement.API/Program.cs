@@ -5,6 +5,7 @@ using ChurchManagement.Application.Commands.Posts.Create;
 using ChurchManagement.Application.Queries.Membros.GetAll;
 using ChurchManagement.Core.Entidades;
 using ChurchManagement.Core.Interfaces;
+using ChurchManagement.Infrastructure.Persistence;
 using ChurchManagement.Infrastructure.Persistence.Repositorios;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +29,8 @@ builder.Services.AddScoped<IMembroRepository, MembroRepository>();
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 builder.Services.AddScoped<IDepartamentoRepository, DepartamentoRepository>();
+builder.Services.AddScoped<ITesourariaRepository, TesourariaRepository>();
+builder.Services.AddScoped<ITransacaoTesourariaRepository, TransacaoTesourariaRepository>();
 
 //register mediator
 builder.Services.AddMediatR(typeof(GetAllMembrosQuery));

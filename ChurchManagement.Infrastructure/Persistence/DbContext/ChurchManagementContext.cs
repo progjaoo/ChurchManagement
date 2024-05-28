@@ -33,14 +33,15 @@ public partial class ChurchManagementContext : DbContext
 
     public virtual DbSet<Tesouraria> Tesouraria { get; set; }
 
-    public virtual DbSet<Usuario> Usuarios { get; set; }
+    public virtual DbSet<TransacaoTesouraria> TransacaoTesouraria { get; set; }
 
+    public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Agenda>(entity =>
         {
-            entity.HasKey(e => e.IdAgenda).HasName("PK__Agenda__FACC499E8B64B628");
+            entity.HasKey(e => e.IdAgenda).HasName("PK__Agenda__FACC499E7213ED2F");
 
             entity.Property(e => e.DataFim).HasPrecision(0);
             entity.Property(e => e.DataInicio).HasPrecision(0);
@@ -63,7 +64,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<Cargo>(entity =>
         {
-            entity.HasKey(e => e.IdCargo).HasName("PK__Cargo__6C9856250C1F6EC2");
+            entity.HasKey(e => e.IdCargo).HasName("PK__Cargo__6C9856251183FC4F");
 
             entity.ToTable("Cargo");
 
@@ -85,7 +86,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<CategoriaDespesa>(entity =>
         {
-            entity.HasKey(e => e.IdCategoria).HasName("PK__Categori__A3C02A105F5852EE");
+            entity.HasKey(e => e.IdCategoria).HasName("PK__Categori__A3C02A10FC4C359A");
 
             entity.ToTable("CategoriaDespesa");
 
@@ -96,7 +97,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<Departamento>(entity =>
         {
-            entity.HasKey(e => e.IdDepartamento).HasName("PK__Departam__787A433D48D31CBF");
+            entity.HasKey(e => e.IdDepartamento).HasName("PK__Departam__787A433D3DDE462A");
 
             entity.ToTable("Departamento");
 
@@ -113,7 +114,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<Despesa>(entity =>
         {
-            entity.HasKey(e => e.IdDespesas).HasName("PK__Despesas__BA81E3F05DA6FF97");
+            entity.HasKey(e => e.IdDespesas).HasName("PK__Despesas__BA81E3F0CE56FD75");
 
             entity.HasIndex(e => e.IdCategoria, "Despesas_FKIndex1");
 
@@ -127,7 +128,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<Membro>(entity =>
         {
-            entity.HasKey(e => e.IdMembro).HasName("PK__tmp_ms_x__570E271F8F33D573");
+            entity.HasKey(e => e.IdMembro).HasName("PK__Membro__570E271F20122AA7");
 
             entity.ToTable("Membro");
 
@@ -142,6 +143,7 @@ public partial class ChurchManagementContext : DbContext
             entity.Property(e => e.Endereco)
                 .HasMaxLength(200)
                 .IsUnicode(false);
+            entity.Property(e => e.ImagemMembro).HasMaxLength(1);
             entity.Property(e => e.NomeCompleto)
                 .HasMaxLength(150)
                 .IsUnicode(false);
@@ -152,7 +154,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<MembroDepartamento>(entity =>
         {
-            entity.HasKey(e => new { e.IdMembro, e.IdDepartamento }).HasName("PK__MembroDe__9089832CC8DCFFF1");
+            entity.HasKey(e => new { e.IdMembro, e.IdDepartamento }).HasName("PK__MembroDe__9089832CE96B318F");
 
             entity.ToTable("MembroDepartamento");
 
@@ -163,7 +165,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<ObjetivosFinanceiro>(entity =>
         {
-            entity.HasKey(e => e.IdObjetivo).HasName("PK__Objetivo__E210F071830FA9C0");
+            entity.HasKey(e => e.IdObjetivo).HasName("PK__Objetivo__E210F071B5E31AFD");
 
             entity.ToTable("ObjetivosFinanceiro");
 
@@ -176,7 +178,7 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<Post>(entity =>
         {
-            entity.HasKey(e => e.IdPost).HasName("PK__Post__F8DCBD4D22CEE002");
+            entity.HasKey(e => e.IdPost).HasName("PK__Post__F8DCBD4D85D3B7BD");
 
             entity.ToTable("Post");
 
@@ -191,16 +193,28 @@ public partial class ChurchManagementContext : DbContext
 
         modelBuilder.Entity<Tesouraria>(entity =>
         {
-            entity.HasKey(e => e.IdTesouraria).HasName("PK__Tesourar__DB4E07B5A6277839");
+            entity.HasKey(e => e.IdTesouraria).HasName("PK__Tesourar__DB4E07B5A373B682");
 
-            entity.Property(e => e.DataEntrada).HasPrecision(0);
-            entity.Property(e => e.DataSaida).HasPrecision(0);
+            entity.Property(e => e.CaixaFixo).HasColumnType("decimal(10, 0)");
+            entity.Property(e => e.DataMovimentacoes).HasPrecision(0);
+        });
+
+        modelBuilder.Entity<TransacaoTesouraria>(entity =>
+        {
+            entity.HasKey(e => e.IdTesourariaTransacao).HasName("PK__Transaca__391600BA81C6674A");
+
+            entity.HasIndex(e => e.IdTesouraria, "TransacaoTesouraria_FKIndex1");
+
+            entity.Property(e => e.DataTransacao).HasPrecision(0);
+            entity.Property(e => e.Descricao)
+                .HasMaxLength(45)
+                .IsUnicode(false);
             entity.Property(e => e.Quantidade).HasColumnType("decimal(10, 0)");
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__5B65BF97FEB73D6A");
+            entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__5B65BF970548B1D1");
 
             entity.ToTable("Usuario");
 
@@ -211,13 +225,12 @@ public partial class ChurchManagementContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.Papel)
-                .HasMaxLength(20)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Senha)
                 .HasMaxLength(100)
                 .IsUnicode(false);
         });
-
 
         OnModelCreatingPartial(modelBuilder);
     }

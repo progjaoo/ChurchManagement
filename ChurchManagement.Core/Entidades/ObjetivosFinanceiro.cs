@@ -16,13 +16,9 @@ public partial class ObjetivosFinanceiro
         CriadoEm = DateTime.Now;
     }
 
-    public int IdObjetivo { get; set; }
-
-    public decimal? QuantidadeAlvo { get; set; }
-
-    public string Titulo { get; set; }
-
-    public StatusObjetivoEnum StatusObjetivo { get; set; }
-
-    public DateTime? CriadoEm { get; set; }
+    public int IdObjetivo { get; private set; }
+    public decimal? QuantidadeAlvo { get; private set; }
+    public string Titulo { get; private set; }
+    public StatusObjetivoEnum StatusObjetivo { get; private set; }
+    public DateTime? CriadoEm { get; private set; }
 }

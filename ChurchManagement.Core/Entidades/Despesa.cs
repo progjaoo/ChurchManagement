@@ -7,15 +7,20 @@ namespace ChurchManagement.Core.Entidades;
 
 public partial class Despesa
 {
-    public int IdDespesas { get; set; }
 
-    public int IdCategoria { get; set; }
+    public Despesa(int idCategoria, DateTime? dataDespesa, string descricao, decimal? valor, byte[] reciboPagamento)
+    {
+        IdCategoria = idCategoria;
+        DataDespesa = dataDespesa;
+        Descricao = descricao;
+        Valor = valor;
+        ReciboPagamento = reciboPagamento;
+    }
 
-    public DateTime? DataDespesa { get; set; }
-
-    public string Descricao { get; set; }
-
-    public decimal? Valor { get; set; }
-
-    public byte[] ReciboPagamento { get; set; }
+    public int IdDespesas { get; private set; }
+    public int IdCategoria { get; private set; }
+    public DateTime? DataDespesa { get; private set; }
+    public string Descricao { get; private set; }
+    public decimal? Valor { get; private set; }
+    public byte[] ReciboPagamento { get; private set; }
 }

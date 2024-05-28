@@ -24,4 +24,5 @@ public partial class Departamento
         Descricao = descricao;
         Lider = lider;
     }
+
 }

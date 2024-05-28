@@ -9,10 +9,10 @@ D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManage
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.AssemblyInfoInputs.cache
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.AssemblyInfo.cs
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.csproj.CoreCompileInputs.cache
-D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.csproj.CopyComplete
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\refint\ChurchManagement.Infrastructure.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.pdb
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.genruntimeconfig.cache
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ref\ChurchManagement.Infrastructure.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchManagement.Infrastructure.sourcelink.json
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Infrastructure\obj\Debug\net8.0\ChurchMa.1F1FE396.Up2Date

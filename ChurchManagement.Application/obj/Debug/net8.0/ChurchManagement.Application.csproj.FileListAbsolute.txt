@@ -15,4 +15,4 @@ D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManage
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Application\bin\Debug\net8.0\ChurchManagement.Infrastructure.dll
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Application\bin\Debug\net8.0\ChurchManagement.Infrastructure.pdb
 D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Application\bin\Debug\net8.0\ChurchManagement.Core.pdb
-D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Application\obj\Debug\net8.0\ChurchManagement.Application.csproj.CopyComplete
+D:\PC - 2024\2 - PROJETOS PESSOAIS\Banco First\ChurchManagement.API\ChurchManagement.Application\obj\Debug\net8.0\ChurchMa.05789CDA.Up2Date
