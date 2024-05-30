@@ -1,5 +1,5 @@
 ﻿using ChurchManagement.Application.Commands.Membros.CreateMember;
-using ChurchManagement.Application.Commands.Tesouraria;
+using ChurchManagement.Application.Commands.Tesouraria.Create;
 using ChurchManagement.Application.Commands.TransacaoTesourariaIgreja.RegisterEntrada;
 using ChurchManagement.Application.Commands.TransacaoTesourariaIgreja.RegisterSaida;
 using ChurchManagement.Application.Queries.TransacaoTesourariaIgreja.GetCaixaAsync;

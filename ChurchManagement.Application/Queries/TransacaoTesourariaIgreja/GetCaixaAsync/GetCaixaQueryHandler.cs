@@ -1,4 +1,4 @@
-﻿using ChurchManagement.Application.ViewModels;
+﻿using ChurchManagement.Application.ViewModels.TesourariaVMs;
 using ChurchManagement.Core.Interfaces;
 using MediatR;
 

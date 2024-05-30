@@ -31,6 +31,7 @@ builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 builder.Services.AddScoped<IDepartamentoRepository, DepartamentoRepository>();
 builder.Services.AddScoped<ITesourariaRepository, TesourariaRepository>();
 builder.Services.AddScoped<ITransacaoTesourariaRepository, TransacaoTesourariaRepository>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 
 //register mediator
 builder.Services.AddMediatR(typeof(GetAllMembrosQuery));

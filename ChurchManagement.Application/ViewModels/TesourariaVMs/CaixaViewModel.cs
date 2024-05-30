@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChurchManagement.Application.ViewModels
+namespace ChurchManagement.Application.ViewModels.TesourariaVMs
 {
     public class CaixaViewModel
     {

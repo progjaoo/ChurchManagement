@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace ChurchManagement.Application.Commands.Tesouraria
+namespace ChurchManagement.Application.Commands.Tesouraria.Create
 {
     public class CreateTesourariaCommand : IRequest<int>
     {

@@ -2,7 +2,7 @@
 using ChurchManagement.Core.Interfaces;
 using MediatR;
 
-namespace ChurchManagement.Application.Commands.Tesouraria
+namespace ChurchManagement.Application.Commands.Tesouraria.Create
 {
     public class CreateTesourariaCommandHandler : IRequestHandler<CreateTesourariaCommand, int>
     {

@@ -1,4 +1,4 @@
-﻿using ChurchManagement.Application.ViewModels;
+﻿using ChurchManagement.Application.ViewModels.TesourariaVMs;
 using MediatR;
 
 namespace ChurchManagement.Application.Queries.TransacaoTesourariaIgreja.GetCaixaAsync
