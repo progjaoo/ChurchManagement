@@ -215,6 +215,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "itext.layout.core": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

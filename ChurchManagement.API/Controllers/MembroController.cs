@@ -1,5 +1,6 @@
 ﻿using ChurchManagement.Application.Commands.Membros.CreateMember;
 using ChurchManagement.Application.Commands.Membros.DeleteMember;
+using ChurchManagement.Application.Commands.Membros.GerarPDFCarteirinha;
 using ChurchManagement.Application.Commands.Membros.UpdateMember;
 using ChurchManagement.Application.Commands.Membros.UploadImagem;
 using ChurchManagement.Application.Queries.Membros.GetAll;
@@ -94,6 +95,12 @@ namespace ChurchManagement.API.Controllers
             if (!result) return NotFound();
 
             return Created("Imagem foi enviada com sucesso", command.ImagemMembro.FileName);
+        }
+        [HttpGet("GerarPDFCarteirinha/{idMembro}")]
+        public async Task<IActionResult> GerarPDFCarteirinha(int idMembro)
+        {
+            var result = await _mediator.Send(new GerarPDFCarteirinhaCommand(idMembro));
+            return File(result, "application/pdf", "CarteirinhaMembro.pdf");
         }
     }
 }

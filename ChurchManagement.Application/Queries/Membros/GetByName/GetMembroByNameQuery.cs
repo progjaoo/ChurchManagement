@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ChurchManagement.Application.Queries.Membros.GetByName
 {
-    public class GetMembroByNameQuery : IRequest<MembrosViewModel>
+    public class GetMembroByNameQuery : IRequest<MembroDetalheViewModel>
     {
         public GetMembroByNameQuery(string nomeCompleto)
         {
